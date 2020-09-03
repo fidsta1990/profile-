@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* FONTS */
+
+:root {
+  --clr-one: #4b21ff;
+  --clr-two: #272727;
+  --clr-three: #fefefe;
+  --clr-four: #272727;
+  --clr-five: #a9a9a9;
+  --clr-six: #bdbdbd;
+  --ff: "Lato", sans-serif;
+  --shadow-light: 0px 10px 15px rgba(0, 0, 0, 0.205);
+  --shadow-dark: 0px 10px 20px rgba(0, 0, 0, 0.205);
+  --radius: 0.3rem;
+  --transition: all 0.3s ease-in-out;
+  --spacing: 0.2rem;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* background: var(--clr-one); */
+  background: rgb(209, 209, 209);
+  font-size: 1.2rem;
+  font-family: var(--ff);
+  line-height: 1.5;
+  background: var(--clr-one);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/* End of Reset */
+
+/* info section left */
+
+.contact .info-section {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 54px;
+}
+
+/* content area section */
+
+.contact .content-area {
+  background: white;
+  width: 65%;
+  margin-left: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* overflow: hidden; */
+  /* padding: 0 0 0 20%; */
+}
+
+.contact .img-container {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  height: 90%;
+}
+
+.form-section {
+  background: var(--clr-two);
+  color: var(--clr-three);
+  height: calc(100% - 112px);
+  width: 400px;
+  position: absolute;
+  left: -200px;
+  top: 56px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 13px 9px 35px -8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 13px 9px 35px -8px rgba(0, 0, 0, 0.6);
+  box-shadow: 13px 9px 35px -8px rgba(0, 0, 0, 0.6);
+  padding: 46px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.form-section h4 {
+  font-size: 1.7rem;
+  margin: 4rem 0 6rem 1.8rem;
+}
+
+.form-section input[type="text"],
+input[type="email"],
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--clr-five);
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  margin: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  color: var(--clr-five);
+  margin-bottom: 2rem;
+}
+
+.form-section input::placeholder {
+  color: var(--clr-three);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.form-section button[type="submit"] {
+  background: var(--clr-one);
+  width: 100%;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: var(--clr-three);
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: transparent;
+}
+
+.contact-section {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 56px;
+  height: 100%;
+  width: 60%;
+}
+
+.contact-info h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.contact-info h1 span {
+  color: var(--clr-one);
+}
+
+.contact-info h5 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--clr-two);
+  font-weight: 600;
+}
+.contact-info p {
+  font-size: 1.4rem;
+  color: var(--clr-five);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.contact-box {
+  transition: var(--transition);
+  padding: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  max-width: 600px;
+}
+.contact-box:hover {
+  box-shadow: var(--shadow-light);
+}
+
+.contact-box h5 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--clr-two);
+  font-weight: 600;
+}
+.contact-box p {
+  font-size: 1.4rem;
+  color: var(--clr-five);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+/* content area section */

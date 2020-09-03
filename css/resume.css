@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* FONTS */
+
+:root {
+  --clr-one: #4b21ff;
+  --clr-two: #272727;
+  --clr-three: #fefefe;
+  --clr-four: #272727;
+  --clr-five: #a9a9a9;
+  --clr-six: #bdbdbd;
+  --ff: "Lato", sans-serif;
+  --shadow-light: 0px 10px 15px rgba(0, 0, 0, 0.205);
+  --shadow-dark: 0px 10px 20px rgba(0, 0, 0, 0.205);
+  --radius: 0.3rem;
+  --transition: all 0.3s ease-in-out;
+  --spacing: 0.2rem;
+}
+
+.resume .content-area {
+  background: var(--clr-three);
+  margin-left: 20%;
+  width: 80%;
+  min-width: 300px;
+}
+
+.container {
+  width: 84%;
+  margin-top: 6rem;
+  margin-left: 3rem;
+}
+
+.education,
+.work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.skill {
+  color: var(--clr-four);
+  transition: var(--transition);
+  width: 90%;
+  border-radius: var(--radius);
+}
+
+.degree:nth-child(2),
+.degree:nth-child(4) {
+  margin-right: 0.5rem;
+}
+
+.skill:hover {
+  box-shadow: var(--shadow-light);
+}
+
+.degree {
+  padding-top: 4rem;
+  text-transform: uppercase;
+}
+
+.degree h3 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.degree p {
+  text-transform: uppercase;
+}

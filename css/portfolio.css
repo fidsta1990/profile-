@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* FONTS */
+
+:root {
+  --clr-one: #4b21ff;
+  --clr-two: #272727;
+  --clr-three: #fefefe;
+  --clr-four: #272727;
+  --clr-five: #a9a9a9;
+  --clr-six: #bdbdbd;
+  --ff: "Lato", sans-serif;
+  --shadow-light: 0px 10px 15px rgba(0, 0, 0, 0.205);
+  --shadow-dark: 0px 10px 20px rgba(0, 0, 0, 0.205);
+  --radius: 0.3rem;
+  --transition: all 0.3s ease-in-out;
+  --spacing: 0.2rem;
+}
+
+.work .content-area {
+  background: var(--clr-three);
+  margin-left: 20%;
+  width: 80%;
+  min-width: 300px;
+}
+
+.projects {
+  width: 90%;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  height: 80%;
+}
+
+.title {
+  margin-bottom: 5rem;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* max-width: 1000px; */
+}
+
+.project-box {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+  width: 691px;
+}
+
+.project-box .grey-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #efefef;
+  opacity: 0;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.project-box .grey-bg:hover {
+  opacity: 0.7;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  padding: 4rem;
+  width: 100%;
+}
+
+.project-info ion-icon {
+  font-size: 5rem;
+  position: absolute;
+  bottom: 37px;
+  right: 10px;
+  color: var(--clr-one);
+}
+
+.project-details {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  position: relative;
+  color: var(--clr-one);
+  margin: 0 0 1rem;
+  transition: var(--transition);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  padding-top: 1rem;
+}
